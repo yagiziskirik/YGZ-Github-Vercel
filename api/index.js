@@ -37,7 +37,7 @@ module.exports = (req, res) => {
 		var splitNumb = numbSplitter(numb)
 		var remainingStr = body.substr(numb.length+1, 10000)
 		var capitalStr = remainingStr.charAt(0).toUpperCase() + remainingStr.slice(1)
-		var resultText = parBuild.toArray(capitalStr, [minNumChar=42])
+		var resultText = parBuild.toArray(capitalStr, 20)
 		var svgRes = buildNew(resultText, splitNumb)
 		res.setHeader("Content-Type","image/svg+xml")
 		res.status(200).send(svgRes)
