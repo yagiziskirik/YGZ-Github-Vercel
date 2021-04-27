@@ -150,6 +150,7 @@ module.exports = (req, res) => {
 		var capitalStr = remainingStr.charAt(0).toUpperCase() + remainingStr.slice(1)
 		var resultText = parBuild.toArray(capitalStr, [minNumChar=42])
 		var svgRes = buildNew(resultText, splitNumb)
+		res.header("Content-Type","image/svg+xml");
 		res.status(200).send(svgRes)
 	});
 }
