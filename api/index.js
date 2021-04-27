@@ -37,7 +37,7 @@ function buildNew(textVar, numb) {
 		height += 25
 		animationSpeed += 150
 	}
-	svgCont += '<g transform="translate(0, '+height+')"><g class="stagger" style="animation-delay: '+animationSpeed+'ms" transform="translate(0, 0)"><text id="footer" class="stat bold" x="25" y="12.5">by yagiziskirik</text></g></g>'
+	svgCont += '<g transform="translate(0, '+(height+10)+')"><g class="stagger" style="animation-delay: '+animationSpeed+'ms" transform="translate(0, 0)"><text id="footer" class="stat bold" x="25" y="12.5">by yagiziskirik</text></g></g>'
     svgCont += endSvg
 	return svgCont
 }
