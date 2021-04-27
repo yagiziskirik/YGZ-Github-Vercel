@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/yagiziskirik/YGZ-Github-Vercel#readme",
   "dependencies": {
+    "paragraph-builder": "^1.0.15",
     "request": "^2.88.2"
   }
 }
